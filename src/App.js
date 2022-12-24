@@ -4,20 +4,18 @@ import Weather from "./Weather";
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className="Container">
         <Weather />
         <footer>
-          <p>
-            <a
-              href="https://github.com/rookiebehaviour/awesome-weather-app"
-              target="_blank"
-              rel="noreferrer"
-              className="Footer-link"
-            >
-              Open-source
-            </a>
-            Coded by Jacqueline Mason
-          </p>
+          <a
+            href="https://github.com/rookiebehaviour/awesome-weather-app"
+            target="_blank"
+            rel="noreferrer"
+            className="Footer-link"
+          >
+            Open-source
+          </a>{" "}
+          coded by Jacqueline Mason
         </footer>
       </div>
     </div>

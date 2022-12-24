@@ -1,3 +1,20 @@
-.Header {
-  text-align: center;
+.App {
+  color: white;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.App Footer {
+  font-size: 13px;
+  color: black;
+  margin: 10px 0;
+}
+
+.App Footer a {
+  color: black;
+}
+
+.App Footer a:hover {
+  color: #deb887;
 }

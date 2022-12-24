@@ -1,14 +1,5 @@
-li {
-  list-style: none;
-}
-
-.App {
-  background: #2c2b2b;
-  color: white;
-  padding: 20px;
-}
-
 .Weather {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background: #3e4e22;
   border: 5px solid #b8860b;
   border-radius: 30px;
@@ -16,7 +7,59 @@ li {
   padding: 20px;
 }
 
-.Footer-link {
-  color: white;
-  padding: 20px;
+.Weather h1 {
+  font-size: 35px;
+  color: #deb887;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.Weather form {
+  margin-bottom: 20px;
+}
+
+.Weather .form-control {
+  margin-bottom: 10px;
+  border: none;
+}
+
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Weather li {
+  list-style: none;
+}
+
+.Weather img {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  top: -15px;
+  line-height: 1;
+}
+
+.Weather .temperature {
+  line-height: 1;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.Weather .unit {
+  position: relative;
+  top: -30px;
+  line-height: 1;
+}
+
+.Weather .btn {
+  background: #b8860b;
+  border-color: #deb887;
+  transition: all 150ms ease-in-out;
+}
+
+.Weather .btn:hover {
+  background: #deb887;
+  color: black;
+  border-color: #b8860b;
 }
