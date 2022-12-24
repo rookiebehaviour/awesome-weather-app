@@ -1,0 +1,22 @@
+li {
+  list-style: none;
+}
+
+.App {
+  background: #2c2b2b;
+  color: white;
+  padding: 20px;
+}
+
+.Weather {
+  background: #3e4e22;
+  border: 5px solid #b8860b;
+  border-radius: 30px;
+  color: white;
+  padding: 20px;
+}
+
+.Footer-link {
+  color: white;
+  padding: 20px;
+}
