@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="Container">
-        <Weather />
+        <Weather defaultCity="Cincinnati" />
         <footer>
           <a
             href="https://github.com/rookiebehaviour/awesome-weather-app"
