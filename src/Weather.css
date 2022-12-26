@@ -31,12 +31,10 @@
 .Weather li {
   list-style: none;
   font-size: 18px;
+  line-height: 2;
 }
 
 .Weather img {
-  display: inline-block;
-  margin-right: 10px;
-  position: relative;
   top: -15px;
   line-height: 1;
 }
