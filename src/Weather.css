@@ -44,10 +44,16 @@
   height: 100px;
 }
 
-.Weather .temperature {
+.Weather .main-weather {
   line-height: 1.5;
   font-size: 60px;
   font-weight: bold;
+}
+
+.Weather .main-unit {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 3;
 }
 
 .Weather .unit {

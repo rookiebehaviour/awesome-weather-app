@@ -7,18 +7,20 @@ export default function WeatherInfo(props) {
       <h1>{props.data.city}</h1>
       <ul>
         <li>
+          Updated on:
           <FormattedDate date={props.data.date} />
         </li>
         <li className="text-capitalize">{props.data.description}</li>
       </ul>
-      <div className="row mt-3 mb-3">
-        <div className="d-flex col-sm-6 p-0">
+      <div className="row mt-3 mb-3 w-100">
+        <div className="d-flex col-sm-6 p-0 main-weather">
           <img
             src={props.data.icon}
             alt={props.data.description}
             className="Main-weather-icon"
           />
-          {Math.round(props.data.temperature)}°F
+          {Math.round(props.data.temperature)}
+          <span className="main-unit">°F</span>
         </div>
 
         <div className="col-sm-6">
