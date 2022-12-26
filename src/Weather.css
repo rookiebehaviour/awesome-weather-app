@@ -31,7 +31,7 @@
 .Weather li {
   list-style: none;
   font-size: 18px;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .Weather img {
@@ -39,8 +39,13 @@
   line-height: 1;
 }
 
+.Weather .Main-weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
 .Weather .temperature {
-  line-height: 1;
+  line-height: 1.5;
   font-size: 60px;
   font-weight: bold;
 }
