@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
+import { Dna } from "react-loader-spinner";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ loaded: false });
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       loaded: true,
       city: response.data.city,
-      date: "Sunday, December 25, 2022",
+      date: new Date(response.data.time * 1000),
       temperature: response.data.temperature.current,
       description: response.data.condition.description,
       feelsLike: response.data.temperature.feels_like,
@@ -44,7 +47,9 @@ export default function Weather(props) {
         </form>
         <h1>{weatherData.city}</h1>
         <ul>
-          <li>{weatherData.date}</li>
+          <li>
+            <FormattedDate date={weatherData.date} />
+          </li>
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row mt-3">
@@ -73,6 +78,18 @@ export default function Weather(props) {
 
     axios.get(url).then(handleResponse);
 
-    return "Loading...";
+    return (
+      <div>
+        <h2>Searching...</h2>
+        <Dna
+          visible={true}
+          height="200"
+          width="200"
+          ariaLabel="dna-loading"
+          wrapperStyle={{}}
+          wrapperClass="dna-wrapper"
+        />
+      </div>
+    );
   }
 }
