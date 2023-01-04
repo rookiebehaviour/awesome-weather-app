@@ -39,7 +39,7 @@
   line-height: 1;
 }
 
-.Weather .Main-weather-icon {
+.Weather .main-weather-icon {
   width: 100px;
   height: 100px;
 }
@@ -72,4 +72,8 @@
   background: #deb887;
   color: black;
   border-color: #b8860b;
+}
+
+.Weather .WeatherForecast-temperatures {
+  margin-bottom: 15px;
 }
