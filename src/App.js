@@ -11,7 +11,7 @@ function App() {
             href="https://github.com/rookiebehaviour/awesome-weather-app"
             target="_blank"
             rel="noreferrer"
-            className="Footer-link"
+            className="Footer-link text-center"
           >
             Open-source
           </a>{" "}

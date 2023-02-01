@@ -4,7 +4,7 @@
   border: 5px solid #b8860b;
   border-radius: 20px;
   color: white;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .Weather h1 {
@@ -45,6 +45,8 @@
 }
 
 .Weather .main-weather {
+  display: flex;
+
   line-height: 1.5;
   font-size: 60px;
   font-weight: bold;
@@ -58,7 +60,7 @@
 
 .Weather .unit {
   position: relative;
-  top: -30px;
+  top: -20px;
   line-height: 1;
 }
 
@@ -76,4 +78,8 @@
 
 .Weather .WeatherForecast-temperatures {
   margin-bottom: 15px;
+}
+
+.Weather .WeatherInfo {
+  padding-left: 10px;
 }
